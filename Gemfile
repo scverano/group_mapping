@@ -5,16 +5,16 @@ gem 'rails', '3.2.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :development do
+  gem 'activerecord-jdbcsqlite3-adapter'
+end
+
 gem 'activerecord-jdbcpostgresql-adapter'
 
 gem 'jruby-openssl'
 gem 'json'
+gem 'puma'
 
-
-
-group :production do
-  gem "trinidad"
-end
 
 # Gems used only for assets and not required
 # in production environments by default.
