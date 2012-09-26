@@ -1,0 +1,30 @@
+<div class="alert alert-success">
+	<%= notice %>
+</div>
+<div class="well">
+<%= form_tag(:action => "new", :controller => "mappings", :remote => true, :html_class => {:class => "form-horizontal"}) do %>
+<%= field_set_tag do %>
+
+<legend>Add New Map</legend>
+  <div class="control-group">
+    <%= label_tag 'Name' %>
+    <div class="controls">
+      <%= text_field_tag :name, 'MAP: ' %>	
+    </div>
+  </div>
+  <div class="control-group">
+    <%= label_tag 'Filters' %>
+    <div class="controls">
+      <%= text_area_tag :filters, nil, :size => "25x10" %>
+    </div>
+  </div>
+ 
+  <div class="form-actions">
+      <%= submit_tag "Save changes", :id => "submit", :name => "submit", :class => "btn btn-primary", :disabled => false, :disable_with => "Please wait..." %>
+	  <%= link_to "Cancel", mappings_path, :class => "btn" %>
+	<% end -%>    
+  </div>
+
+<% end %>
+
+</div>

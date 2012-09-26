@@ -1,0 +1,7 @@
+if($('#helloworld').text() == "Ungroup") {
+	$('#helloworld').text('Group');
+	$('#product').html('<%= escape_javascript(render "ungroup") %>');
+} else {
+	$('#helloworld').text('Ungroup');
+	$('#product').html('<%= escape_javascript(render "group") %>');
+}

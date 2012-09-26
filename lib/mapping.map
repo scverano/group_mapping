@@ -1,0 +1,71 @@
+# Comments and blank lines are ignored
+# 
+# Format of config file describing how to combine product
+# into a combined product
+#  
+# MAP: <combined product name>  
+#
+# <product name 1>       
+# <product name 2>
+# ...       
+#
+# Product names can use wildcars '?' to match any character or
+# '*' to match any substring (0 or more characters).
+# 
+ 
+MAP: Autodesk
+Autodesk_KUL
+Autodesk_kulvlic1_KUL
+ 
+MAP: calls01
+calls01*
+
+MAP: mocznlic01
+mocznlic01*
+
+
+MAP: Landmark
+Landmark*
+
+MAP: Houslic01
+houslic01*
+
+MAP: Houslic02
+houslic02*
+
+MAP: Houslic03
+houslic03*
+
+MAP: ZEH
+zeh*
+MAP: new
+map
+
+MAP: new
+map
+
+
+
+MAP: two
+as
+
+MAP: how
+as
+
+
+
+MAP: Petrosys
+Petrosys*
+
+MAP: Petrosys
+Petrosys*
+
+MAP: SLY
+SLY VERANO
+
+
+
+
+
+MAP: JED
+JED Product

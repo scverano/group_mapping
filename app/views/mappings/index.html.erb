@@ -1,0 +1,28 @@
+<%#= link_to_function("Click Me", "click_me()", html_options={:id => "click"}) %>
+<%#= link_to_function "Greeting", "click_me();", :class => "nav_link" %>
+<div class="well">
+    <div class="btn-group" data-toggle="buttons-checkbox">
+      <%= link_to 'Create New Map  <i class="icon-plus"></i>'.html_safe, new_mapping_path, :class => "btn btn-success" %>
+      <%= link_to "Ungroup", edit_mapping_path, :id => "helloworld", :class => "btn btn-primary", :remote => true  %>
+    </div>
+    <br/>
+
+    <div id="product">
+    <table class="table table-striped visible">
+        <caption><h2>Group Mapping</h2></caption>
+        <thead>
+            <tr>
+                <th><span class="badge badge-info"><%= @maps.mapped.count %></span> Products Found</th>
+            </tr>
+        </thead>
+        <tbody>
+         <% @maps.mapped.each_key do |k| %>
+                <tr>
+                    <td><%= k %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+    </div>
+</div>
+

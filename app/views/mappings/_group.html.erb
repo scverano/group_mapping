@@ -1,0 +1,15 @@
+<table class="table table-striped visible">
+	<caption><h2>Group Mapping</h2></caption>
+	<thead>
+		<tr>
+			<th><span class="badge badge-info"><%= @maps.mapped.count %></span> Products Found</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @maps.mapped.each_key do |k| %>
+			<tr>
+				<td><%= k %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

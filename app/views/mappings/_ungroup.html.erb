@@ -1,0 +1,15 @@
+<table class="table table-striped hidden">
+	<caption><h2>Ungroup Mapping</h2></caption>
+	<thead>
+		<tr>
+			<th><span class="badge badge-info"><%= @maps.unmapped.count %></span> Products Found</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @maps.unmapped.each_key do |k| %>
+			<tr>
+				<td><%= k %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
