@@ -10,7 +10,11 @@ gem 'activerecord-jdbcpostgresql-adapter'
 gem 'jruby-openssl'
 gem 'json'
 
-gem 'thin'
+
+
+group :production do
+  gem "trinidad"
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
