@@ -1,1 +1,1 @@
-web: bin/trinidad -t -r -p $PORT -e $RACK_ENV
+web: bin/trinidad -p $PORT -e $RACK_ENV -t -r

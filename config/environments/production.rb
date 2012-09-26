@@ -67,6 +67,8 @@ Ex1::Application.configure do
   
   config.assets.js_compressor = :closure
   
+  config.threadsafe!
+  
   STDOUT.sync = true
   config.logger = Logger.new(STDOUT)
 end
